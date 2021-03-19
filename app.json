@@ -2,12 +2,7 @@
     "name": "V2Gen Generator",
     "description": "Deploy V2Gen Generator on Heroku.",
     "keywords": ["V2Gen"],
-    "env": {
-        "DOWNLOADLINK": {
-            "description": "V2Gen Download Link",
-            "value": "https://github.com/Effect-Wei/v2gen/generator.py"
-        }
-    },
+    "env": {},
     "repository": "https://github.com/Effect-Wei/v2gen",
     "stack": "container"
 }
