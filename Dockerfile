@@ -6,4 +6,4 @@ ADD v2gen.conf /etc/nginx/conf.d/v2gen.conf
 
 RUN chmod +x /configure.sh && rm /etc/nginx/sites-enabled/default
 
-CMD /configure.sh
+CMD /bin/bash /configure.sh
