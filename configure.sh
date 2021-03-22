@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 
-echo listen $PORT default_server\; > /etc/nginx/conf.d/listen
+/bin/bash -c "echo listen $PORT default_server\; > /etc/nginx/conf.d/listen"
 service nginx restart
 service fcgiwrap restart
