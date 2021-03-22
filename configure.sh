@@ -1,5 +1,5 @@
 #!/bin/sh
 
-/bin/bash -c "envsubst '\$PORT' < /etc/nginx/conf.d/v2gen.template > /etc/nginx/conf.d/v2gen.conf" && nginx -g 'daemon off;'
-#service nginx restart
+/bin/bash -c "echo listen $PORT default_server\; > /etc/nginx/conf.d/listen"
+service nginx restart
 service fcgiwrap restart
