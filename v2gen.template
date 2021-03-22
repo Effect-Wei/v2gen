@@ -1,6 +1,6 @@
+#Configuration of Nginx
 server {
-        set_by_lua $LISTEN 'return os.getenv("PORT")';
-        listen $LISTEN default_server;
+        listen $PORT default_server;
 
         server_name _ ;
         root /var/cgi-bin/;
