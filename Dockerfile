@@ -4,6 +4,6 @@ ADD configure.sh /configure.sh
 ADD generator.py /usr/local/apache2/cgi-bin/generator.py
 ADD httpd.conf /usr/local/apache2/conf/httpd.conf
 
-RUN chmod +x /configure.sh
+RUN chmod +x /configure.sh && apt update && apt install python3 -y
 
 CMD /configure.sh
