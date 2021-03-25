@@ -1,4 +1,4 @@
 #!/bin/sh
 
 apachectl -t
-httpd
+httpd-foreground
