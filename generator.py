@@ -7,8 +7,8 @@ import cgitb
 form = cgi.FieldStorage() 
 
 # 获取数据
-server_name = form.getvalue('name')
-server_link = form.getvalue('link')
+name = form.getvalue('name')
+link = form.getvalue('link')
 
 print ("Content-type: text/plain")
 print ()
