@@ -10,6 +10,6 @@ form = cgi.FieldStorage()
 name = form.getvalue('name')
 link = form.getvalue('link')
 
-print ("Content-type: text/plain")
+print ("Content-Type: text/plain")
 print ()
 print (name, " ", link)
